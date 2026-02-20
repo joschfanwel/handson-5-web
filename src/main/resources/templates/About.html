@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+</head>
+<body>
+<h1>ini adalah about page</h1>
+<p th:text="${textHello}"></p>
+
+<table border="1" cellpadding="8">
+    <tr>
+        <td><b>Tempat, TanggalLahir</b></td>
+        <td th:text="${tempatTanggalLahir}"></td>
+    </tr>
+    <tr>
+        <td><b>Alamat</b></td>
+        <td th:text="${Alamat}"></td>
+    </tr>
+    <tr>
+        <td><b>Email</b></td>
+        <td th:text="${Email}"></td>
+    </tr>
+    <tr>
+        <td><b>No. Telepon</b></td>
+        <td th:text="${noTelepon}"></td>
+    </tr>
+    <tr>
+        <td><b>Pendidikan</b></td>
+        <td th:text="${Pendidikan}"></td>
+    </tr>
+    <tr>
+        <td><b>Hobi</b></td>
+        <td th:text="${Hobi}"></td>
+    </tr>
+
+</table>
+
+<a th:href="@{/}">Home</a>
+<a th:href="@{/products}">Produk</a>
+
+</body>
+</html>
